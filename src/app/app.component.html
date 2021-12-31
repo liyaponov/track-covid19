@@ -1,0 +1,8 @@
+<div class="container" [ngClass]="{'loading': !data.confirmed.value}" *ngIf="!data.confirmed.value">
+    <mat-spinner></mat-spinner>
+</div>
+<div class="container" [ngClass]="{'dark': isDarkTheme}">
+    <app-card ></app-card>
+    <app-country-picker></app-country-picker>
+    <app-chart></app-chart>
+</div>
